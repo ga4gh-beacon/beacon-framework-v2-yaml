@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=http://json-schema.org/draft-07/schema
+title: Filtering Terms schema
+description: Schema for the Filtering Terms list related to the hosting entry type. It is kept separated to allow updating it independently.
+type: object
+properties:
+  filteringTerms:
+    description: List of filtering terms that could be used to filter this concept in this instance of Beacon.
+    type: array
+    items:
+      $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/ontologyTerm.json"
+    minItems: 0
+required:
+  - filteringTerms
+additionalProperties: true
