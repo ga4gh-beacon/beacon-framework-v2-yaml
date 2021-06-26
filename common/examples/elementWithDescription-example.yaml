@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/elementWithDescription.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/common/elementWithDescription.yaml
 id: EWDex1
 name: Element with description one
 description: A longer textual description for the element.

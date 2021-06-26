@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/requests/beaconRequestBody.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/requests/beaconRequestBody.yaml
 meta:
   apiVersion: '2.0'
   requestedSchemas:

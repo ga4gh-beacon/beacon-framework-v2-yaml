@@ -2,7 +2,7 @@
 description: Beacon response that includes record level details, grouped in Resultsets.
 type: object
 allOf:
-  - $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/responses/beaconCoreResponse.json"
+  - $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/responses/beaconCoreResponse.yaml"
     description: 'Section of the Response that does not include record level details
     and just `boolean` or `count` responses.'
-  - $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/responses/sections/beaconResultsets.json"
+  - $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/responses/sections/beaconResultsets.yaml"

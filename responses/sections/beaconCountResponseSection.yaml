@@ -6,9 +6,9 @@ properties:
     description: Indicator of whether any entry was observed. This should be non-null,
       unless there was an error, in which case an error response is expected instead
       of this one.
-    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/beaconCommonComponents.json#/definitions/Exists"
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/common/beaconCommonComponents.yaml#/definitions/Exists"
   numTotalResults:
     description: Total number of results.
-    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/beaconCommonComponents.json#/definitions/NumTotalResults"
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/common/beaconCommonComponents.yaml#/definitions/NumTotalResults"
 required:
   - exists

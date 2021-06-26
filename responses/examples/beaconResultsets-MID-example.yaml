@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/responses/sections/beaconResultsets.yaml
+
+resultSets:
+  - id: correctWithResults
+    type: dataset
+    exists: 'true'
+    resultsCount: 1
+    results:
+      - id: BEex1
+        name: Basic Element example one
+  - id: correctWOresults
+    type: dataset
+    exists: 'false'

@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/responses/sections/beaconEmptyResultset.yaml
+id: correctEmptyResultSet
+type: dataset
+exists: "false"

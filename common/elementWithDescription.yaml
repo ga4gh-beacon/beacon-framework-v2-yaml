@@ -3,7 +3,7 @@ title: Basic Element including a description,
 description: Definition of the basic element extended with a description.,
 type: object
 allOf:
-  - $ref: 'https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/basicElement.json'
+  - $ref: 'https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/common/basicElement.yaml'
   - type: object
     properties:
       description:

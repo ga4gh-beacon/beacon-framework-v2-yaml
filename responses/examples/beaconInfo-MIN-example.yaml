@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/responses/beaconInfoResponse.yaml
+
+meta:
+  beaconId: string
+  apiVersion: string
+  returnedSchemas:
+    - info: 'beacon-info-v2.0.0-draft.3'
+response:
+  id: 'org.ga4gh.beacon'
+  name: string
+  apiVersion: 'v0.3'
+  environment: dev
+  organization:
+    id: string
+    name: string

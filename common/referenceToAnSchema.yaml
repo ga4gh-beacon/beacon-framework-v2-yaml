@@ -3,7 +3,7 @@ title: An annotated URL address or a file reference
 description: Definition of an annotated URL address or a file reference.
 type: object
 allOf:
-  - $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/elementWithDescription.json"
+  - $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/common/elementWithDescription.yaml"
   - type: object
     properties:
       referenceToSchemaDefinition:

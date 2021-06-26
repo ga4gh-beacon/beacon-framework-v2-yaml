@@ -4,10 +4,10 @@ description: List of filtering terms response.
 properties:
   meta:
     description: Information about the response that could be relevant for the Beacon client in order to interpret the results.
-    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/responses/sections/beaconInformationalResponseMeta.json"
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/responses/sections/beaconInformationalResponseMeta.yaml"
   response:
     description: Actual list of filtering terms.
-    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/responses/sections/beaconFilteringTermsResults.json"
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/responses/sections/beaconFilteringTermsResults.yaml"
 required:
   - meta
   - response

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/responses/beaconResultsetsResponse.yaml
+
+meta:
+  beaconId: 'org.example.beacon.v2'
+  apiVersion: 'v2.0'
+  returnedSchemas:
+    - entityType: EntryTypeB
+      schema: 'entry-typeB-schema-v1.0'
+  receivedRequestSummary:
+    apiVersion: '2.0'
+    requestedSchemas:
+      - entityType: EntryTypeB
+        schema: 'entry-typeB-schema-v1.0'
+    pagination:
+      skip: 0
+      limit: 10
+responseSummary:
+  exists: true
+resultSets: []

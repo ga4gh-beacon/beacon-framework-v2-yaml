@@ -5,7 +5,7 @@ description: Files complaint with this schema are the configuration ones. The de
 type: object
 properties:
   $schema:
-    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/beaconCommonComponents.json#/definitions/$schema"
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/common/beaconCommonComponents.yaml#/definitions/$schema"
   maturityAttributes:
     description: Declares the level of maturity of the Beacon instance.
     type: object
@@ -61,7 +61,7 @@ definitions:
       instance.
     additionalProperties:
       type: object
-      $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/configuration/entryTypeDefinition.json"
+      $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/configuration/entryTypeDefinition.yaml"
     minProperties: 1
 required:
   - $schema

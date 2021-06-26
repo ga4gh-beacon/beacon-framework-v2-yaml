@@ -4,16 +4,16 @@ type: object
 properties:
   beaconId:
     description: 'Identifier of the beacon, as defined in `Beacon`.'
-    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/beaconCommonComponents.json#/definitions/BeaconId"
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/common/beaconCommonComponents.yaml#/definitions/BeaconId"
   apiVersion:
     description: Version of the API.
-    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/beaconCommonComponents.json#/definitions/ApiVersion"
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/common/beaconCommonComponents.yaml#/definitions/ApiVersion"
   returnedSchemas:
-    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/beaconCommonComponents.json#/definitions/ListOfSchemas"
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/common/beaconCommonComponents.yaml#/definitions/ListOfSchemas"
   receivedRequestSummary:
     description: Section of the response that summarize the request received as it
       has been interpreted by teh Beacon server.
-    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/responses/sections/beaconReceivedRequestSummary.json"
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/responses/sections/beaconReceivedRequestSummary.yaml"
 required:
   - beaconId
   - apiVersion

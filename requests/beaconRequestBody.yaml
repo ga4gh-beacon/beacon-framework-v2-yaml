@@ -5,25 +5,25 @@ description: Schema for the Beacon request. It is named `RequestBody` to keep th
 type: object
 properties:
   $schema:
-    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/beaconCommonComponents.json#/definitions/$schema"
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/common/beaconCommonComponents.yaml#/definitions/$schema"
   meta:
     description: Information that is relevant to build the response.
-    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/requests/beaconRequestMeta.json"
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/requests/beaconRequestMeta.yaml"
   query:
     description: Parameters to limit the list of returned results.
     type: object
     properties:
       requestParameters:
         description: TBD.
-        $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/requests/requestParameters.json"
+        $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/requests/requestParameters.yaml"
       filters:
         description: 'Ontology based filters. Using CURIE syntax is encouraged.'
-        $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/requests/filteringTerms.json"
+        $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/requests/filteringTerms.yaml"
       includeResultsetResponses:
         $ref: "#/definitions/IncludeResultsetResponses"
       pagination:
         description: Pagination to apply on the results.
-        $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/beaconCommonComponents.json#/definitions/Pagination"
+        $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/common/beaconCommonComponents.yaml#/definitions/Pagination"
 definitions:
   IncludeResultsetResponses:
     description: Indicator of whether responses from every Resultset should be included

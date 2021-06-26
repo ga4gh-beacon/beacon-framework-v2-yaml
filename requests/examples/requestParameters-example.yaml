@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/requests/requestParameters.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/requests/requestParameters.yaml
 exampleEntry:
   description: |
     All the required fields to query any kind of variant (e.g. SNP, DUP, etc.).

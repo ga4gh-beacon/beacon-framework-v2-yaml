@@ -5,10 +5,10 @@ properties:
   meta:
     description: Information about the response that could be relevant for the Beacon
       client in order to interpret the results.
-    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/responses/sections/beaconResponseMeta.json"
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/responses/sections/beaconResponseMeta.yaml"
   error:
     description: Returning an error.
-    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/beaconCommonComponents.json#/definitions/BeaconError"
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/common/beaconCommonComponents.yaml#/definitions/BeaconError"
 required:
   - meta
   - error

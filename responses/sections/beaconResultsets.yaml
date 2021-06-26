@@ -16,8 +16,8 @@ definitions:
   resultSetInstance:
     type: object
     oneOf:
-    - $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/responses/sections/beaconEmptyResultset.json"
-    - $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/responses/sections/beaconNonEmptyResultset.json"
+    - $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/responses/sections/beaconEmptyResultset.yaml"
+    - $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/responses/sections/beaconNonEmptyResultset.yaml"
 required:
   - resultSets
 additionalProperties: true

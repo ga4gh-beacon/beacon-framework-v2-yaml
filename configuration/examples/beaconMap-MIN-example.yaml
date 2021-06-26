@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/configuration/beaconMapSchema.yaml
+$schema: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/configuration/beaconMapSchema.yaml"
+endpointSets:
+  dataset:
+    entryType: dataset
+    rootUrl: "https://exampleBeacons.org/datasets"

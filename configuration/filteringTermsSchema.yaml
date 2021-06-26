@@ -7,7 +7,7 @@ properties:
     description: List of filtering terms that could be used to filter this concept in this instance of Beacon.
     type: array
     items:
-      $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/ontologyTerm.json"
+      $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/common/ontologyTerm.yaml"
     minItems: 0
 required:
   - filteringTerms

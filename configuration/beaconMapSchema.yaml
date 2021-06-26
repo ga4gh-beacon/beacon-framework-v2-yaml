@@ -4,7 +4,7 @@ description: Map of a Beacon, its entry types and endpoints. It is conceptually 
 type: object
 properties:
   $schema:
-    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/beaconCommonComponents.json#/definitions/$schema"
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2-yaml/main/common/beaconCommonComponents.yaml#/definitions/$schema"
   endpointSets:
     description: List of enpoints included in this Beacon instance. This is list is
       meant to inform Beacon clients, e.g. a Beacon Network, about the available endpoints,
@@ -75,7 +75,7 @@ definitions:
         type: string
         format: uri
       returnedEntryType:
-        description: "Which entry type is returned by querying this endpoint. It MUST match one of the entry types defined in the Beacon configuration file (`beaconConfiguration.json`)."
+        description: "Which entry type is returned by querying this endpoint. It MUST match one of the entry types defined in the Beacon configuration file (`beaconConfiguration.yaml`)."
         type: string
     required:
       - url
