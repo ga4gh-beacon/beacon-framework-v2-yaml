@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=http://json-schema.org/draft-07/schema
+description: 'Complete definition for a Response that does not include record level
+  details and just `boolean` or `count` responses.'
+type: object
+required:
+  - meta
+  - responseSummary
+properties:
+  meta:
+    description: Information about the response that could be relevant for the Beacon
+      client in order to interpret the results.
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/responses/sections/beaconResponseMeta.json"
+  responseSummary:
+    anyOf:
+      - description: Boolean (true/false) response section.
+        $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/responses/sections/beaconBooleanResponseSection.json"
+      - description: Total number of results section.
+        $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/responses/sections/beaconCountResponseSection.json"
+  extendedInfo:
+    description: Additional details that could be of interest. Provided to clearly separate any attribute that is not part of the Beacon specification.
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/beaconCommonComponents.json#/definitions/Info"
+  beaconHandovers:
+    description: List of handovers that apply to the whole response, not to any resultset or result in particular.
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/beaconCommonComponents.json#/definitions/ListOfHandovers"

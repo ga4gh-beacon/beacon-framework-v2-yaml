@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=http://json-schema.org/draft-07/schema
+description: Section of the response that includes the record level details grouped in resultsets.
+type: object
+properties:
+  $schema:
+    type: string
+    description: Reference to the schema used to describe the attributes below.
+    #The '$schema' property is added to allow proper JSON schema+objects debugging in VSCode. It probably could be deleted for other tools or later in the process
+  resultSets:
+    type: array
+    items:
+      $ref: "#/definitions/resultSetInstance"
+    minItems: 0
+
+definitions:
+  resultSetInstance:
+    type: object
+    oneOf:
+    - $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/responses/sections/beaconEmptyResultset.json"
+    - $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/responses/sections/beaconNonEmptyResultset.json"
+required:
+  - resultSets
+additionalProperties: true

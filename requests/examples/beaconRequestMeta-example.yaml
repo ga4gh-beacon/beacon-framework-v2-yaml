@@ -1,0 +1,5 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/requests/beaconRequestMeta.json
+apiVersion: '2.0'
+requestedSchemas: 
+  - entityType: EntryTypeA
+  - schema: entry-typeA-schema-v0.1

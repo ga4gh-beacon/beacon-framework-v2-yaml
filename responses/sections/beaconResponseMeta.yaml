@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=http://json-schema.org/draft-07/schema
+description: Information about the response that could be relevant for the Beacon client in order to interpret the results.
+type: object
+properties:
+  beaconId:
+    description: 'Identifier of the beacon, as defined in `Beacon`.'
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/beaconCommonComponents.json#/definitions/BeaconId"
+  apiVersion:
+    description: Version of the API.
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/beaconCommonComponents.json#/definitions/ApiVersion"
+  returnedSchemas:
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/common/beaconCommonComponents.json#/definitions/ListOfSchemas"
+  receivedRequestSummary:
+    description: Section of the response that summarize the request received as it
+      has been interpreted by teh Beacon server.
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main/responses/sections/beaconReceivedRequestSummary.json"
+required:
+  - beaconId
+  - apiVersion
+  - returnedSchemas
+  - receivedRequestSummary

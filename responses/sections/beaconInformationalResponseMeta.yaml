@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=http://json-schema.org/draft-07/schema
+description: Meta information about the response.
+type: object
+properties:
+  beaconId:
+    description: Identifier of the beacon, as defined in `Beacon`.
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main//common/beaconCommonComponents.json#/definitions/BeaconId"
+  apiVersion:
+    description: Version of the API.
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main//common/beaconCommonComponents.json#/definitions/ApiVersion"
+  returnedSchemas:
+    $ref: "https://raw.githubusercontent.com/ga4gh-beacon/beacon-framework-v2/main//common/beaconCommonComponents.json#/definitions/ListOfSchemas"
+# TO REVIEW: the required properties below results in a warning in the example.
+required:
+  - beaconId
+  - apiVersion
+  - returnedSchemas
+additionalProperties: true
